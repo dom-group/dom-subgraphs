@@ -1,0 +1,119 @@
+0 silly argv {
+0 silly argv   _: [ 'bootstrap' ],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath D:\contracts\dom-subgraphs
+3 verbose hoist using globs ["**"]
+4 silly npmConfig {
+4 silly npmConfig   registry: undefined,
+4 silly npmConfig   npmClient: 'npm',
+4 silly npmConfig   npmClientArgs: [],
+4 silly npmConfig   mutex: undefined
+4 silly npmConfig }
+5 info Bootstrapping 2 packages
+6 verbose lifecycle preinstall
+7 silly lifecycle No script for "preinstall" in "dom-nft", continuing
+8 silly lifecycle No script for "preinstall" in "dom", continuing
+9 warn EHOIST_ROOT_VERSION The repository root depends on @graphprotocol/graph-cli@^0.21.0, which differs from the more common @graphprotocol/graph-cli@^0.20.1.
+10 warn EHOIST_PKG_VERSION "dom-nft" package depends on @graphprotocol/graph-cli@0.21.0, which differs from the hoisted @graphprotocol/graph-cli@^0.21.0.
+11 warn EHOIST_PKG_VERSION "dom" package depends on @graphprotocol/graph-cli@^0.20.1, which differs from the hoisted @graphprotocol/graph-cli@^0.21.0.
+12 warn EHOIST_ROOT_VERSION The repository root depends on @graphprotocol/graph-ts@^0.20.0, which differs from the more common @graphprotocol/graph-ts@^0.20.1.
+13 warn EHOIST_PKG_VERSION "dom-nft" package depends on @graphprotocol/graph-ts@0.20.0, which differs from the hoisted @graphprotocol/graph-ts@^0.20.0.
+14 warn EHOIST_PKG_VERSION "dom" package depends on @graphprotocol/graph-ts@^0.20.1, which differs from the hoisted @graphprotocol/graph-ts@^0.20.0.
+15 silly hasDependencyInstalled dom-subgraphs @commitlint/cli
+16 silly hasDependencyInstalled dom-subgraphs @commitlint/config-conventional
+17 silly hasDependencyInstalled dom-subgraphs @graphprotocol/graph-cli
+18 silly hasDependencyInstalled dom-subgraphs @graphprotocol/graph-ts
+19 silly hasDependencyInstalled dom-subgraphs @typescript-eslint/eslint-plugin
+20 silly hasDependencyInstalled dom-subgraphs @typescript-eslint/parser
+21 silly hasDependencyInstalled dom-subgraphs eslint
+22 silly hasDependencyInstalled dom-subgraphs eslint-config-prettier
+23 silly hasDependencyInstalled dom-subgraphs husky
+24 silly hasDependencyInstalled dom-subgraphs lerna
+25 silly hasDependencyInstalled dom-subgraphs prettier
+26 silly hasDependencyInstalled dom-subgraphs typescript
+27 silly hasDependencyInstalled dom-nft @graphprotocol/graph-cli
+28 silly hasDependencyInstalled dom @graphprotocol/graph-cli
+29 silly hasDependencyInstalled dom-nft @graphprotocol/graph-ts
+30 silly hasDependencyInstalled dom @graphprotocol/graph-ts
+31 silly root dependencies {}
+32 silly leaf dependencies {}
+33 info Installing external dependencies
+34 verbose actions 4 actions, concurrency 6
+35 info hoist Installing hoisted dependencies into root
+36 silly npmInstallDependencies dom-subgraphs [
+36 silly npmInstallDependencies   '@commitlint/cli@^13.1.0',
+36 silly npmInstallDependencies   '@commitlint/config-conventional@^13.1.0',
+36 silly npmInstallDependencies   '@graphprotocol/graph-cli@^0.21.0',
+36 silly npmInstallDependencies   '@graphprotocol/graph-ts@^0.20.0',
+36 silly npmInstallDependencies   '@typescript-eslint/eslint-plugin@^4.29.0',
+36 silly npmInstallDependencies   '@typescript-eslint/parser@^4.29.0',
+36 silly npmInstallDependencies   'eslint@^7.32.0',
+36 silly npmInstallDependencies   'eslint-config-prettier@^8.3.0',
+36 silly npmInstallDependencies   'husky@^7.0.0',
+36 silly npmInstallDependencies   'lerna@^4.0.0',
+36 silly npmInstallDependencies   'prettier@^2.3.2',
+36 silly npmInstallDependencies   'typescript@^4.3.5'
+36 silly npmInstallDependencies ]
+37 silly npmInstallDependencies backup D:\contracts\dom-subgraphs\package.json
+38 verbose hoist nothing to prune
+39 silly npmInstallDependencies dom-nft [ '@graphprotocol/graph-cli@0.21.0', '@graphprotocol/graph-ts@0.20.0' ]
+40 silly npmInstallDependencies backup D:\contracts\dom-subgraphs\subgraphs\dom-nft\package.json
+41 silly npmInstallDependencies dom [
+41 silly npmInstallDependencies   '@graphprotocol/graph-cli@^0.20.1',
+41 silly npmInstallDependencies   '@graphprotocol/graph-ts@^0.20.1'
+41 silly npmInstallDependencies ]
+42 silly npmInstallDependencies backup D:\contracts\dom-subgraphs\subgraphs\domPool\package.json
+43 silly npmInstallDependencies writing tempJson {
+43 silly npmInstallDependencies   name: 'dom',
+43 silly npmInstallDependencies   license: 'UNLICENSED',
+43 silly npmInstallDependencies   dependencies: {
+43 silly npmInstallDependencies     '@graphprotocol/graph-cli': '^0.20.1',
+43 silly npmInstallDependencies     '@graphprotocol/graph-ts': '^0.20.1'
+43 silly npmInstallDependencies   }
+43 silly npmInstallDependencies }
+44 silly npmInstallDependencies writing tempJson {
+44 silly npmInstallDependencies   name: 'dom-nft',
+44 silly npmInstallDependencies   license: 'UNLICENSED',
+44 silly npmInstallDependencies   dependencies: {
+44 silly npmInstallDependencies     '@graphprotocol/graph-cli': '0.21.0',
+44 silly npmInstallDependencies     '@graphprotocol/graph-ts': '0.20.0'
+44 silly npmInstallDependencies   }
+44 silly npmInstallDependencies }
+45 silly npmInstallDependencies writing tempJson {
+45 silly npmInstallDependencies   name: 'dom-subgraphs',
+45 silly npmInstallDependencies   description: 'dom Subgraph',
+45 silly npmInstallDependencies   private: true,
+45 silly npmInstallDependencies   repository: 'git@github.com:dom-groupdom-subgraphs.git',
+45 silly npmInstallDependencies   author: 'grandfather',
+45 silly npmInstallDependencies   license: 'MIT',
+45 silly npmInstallDependencies   workspaces: [ 'subgraphs/**/*' ],
+45 silly npmInstallDependencies   devDependencies: {
+45 silly npmInstallDependencies     '@commitlint/cli': '^13.1.0',
+45 silly npmInstallDependencies     '@commitlint/config-conventional': '^13.1.0',
+45 silly npmInstallDependencies     '@graphprotocol/graph-cli': '^0.21.0',
+45 silly npmInstallDependencies     '@graphprotocol/graph-ts': '^0.20.0',
+45 silly npmInstallDependencies     '@typescript-eslint/eslint-plugin': '^4.29.0',
+45 silly npmInstallDependencies     '@typescript-eslint/parser': '^4.29.0',
+45 silly npmInstallDependencies     eslint: '^7.32.0',
+45 silly npmInstallDependencies     'eslint-config-prettier': '^8.3.0',
+45 silly npmInstallDependencies     husky: '^7.0.0',
+45 silly npmInstallDependencies     lerna: '^4.0.0',
+45 silly npmInstallDependencies     prettier: '^2.3.2',
+45 silly npmInstallDependencies     typescript: '^4.3.5'
+45 silly npmInstallDependencies   }
+45 silly npmInstallDependencies }
+46 silly getNpmExecOpts D:\contracts\dom-subgraphs\subgraphs\dom-nft undefined
+47 silly npmInstall [ 'npm', [ 'install', '--global-style' ] ]
+48 silly getNpmExecOpts D:\contracts\dom-subgraphs undefined
+49 silly npmInstall [ 'npm', [ 'install' ] ]
+50 silly getNpmExecOpts D:\contracts\dom-subgraphs\subgraphs\domPool undefined
+51 silly npmInstall [ 'npm', [ 'install', '--global-style' ] ]
+52 silly npmInstallDependencies cleanup D:\contracts\dom-subgraphs\subgraphs\dom-nft\package.json
+53 error Error: ENOENT: no such file or directory, rename 'D:\contracts\dom-subgraphs\subgraphs\dom-nft\package.json.lerna_backup' -> 'D:\contracts\dom-subgraphs\subgraphs\dom-nft\package.json'
+53 error     at Object.renameSync (fs.js:772:3)
+53 error     at cleanup (C:\Users\Administrator\AppData\Roaming\npm\node_modules\lerna\node_modules\@lerna\npm-install\npm-install.js:70:10)
+53 error     at done (C:\Users\Administrator\AppData\Roaming\npm\node_modules\lerna\node_modules\@lerna\npm-install\npm-install.js:78:7)
+53 error     at processTicksAndRejections (internal/process/task_queues.js:93:5)

@@ -1,0 +1,36 @@
+specVersion: 0.0.2
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: DomInvitation
+    network: bsc
+    source:
+      address: "0x59bf8dcb102d54a1297b098377c46ab694331232"
+      abi: DomInvitation
+      startBlock: 8885110
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - Burn
+        - OwnershipTransferred
+        - Promote
+        - Redeem
+        - Register
+      abis:
+        - name: DomInvitation
+          file: ./abis/DomInvitation.json
+      eventHandlers:
+        - event: Burn(indexed address,uint256)
+          handler: handleBurn
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: Promote(indexed address,uint256)
+          handler: handlePromote
+        - event: Redeem(indexed address,uint256)
+          handler: handleRedeem
+        - event: Register(indexed address,indexed address)
+          handler: handleRegister
+      file: ./src/mapping.ts

@@ -1,0 +1,13 @@
+type Referer @entity {
+  id: ID!
+  user: [User!]! @derivedFrom(field: "referer")
+}
+
+type User @entity {
+  id: ID!
+  count: BigInt!
+  level: BigInt!
+  registTime: BigInt!
+  burn: BigInt!
+  referer: Referer!
+}
