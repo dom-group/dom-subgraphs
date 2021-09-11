@@ -1,0 +1,17 @@
+type _Schema_
+  @fulltext(
+    name: "tagSearch"
+    language: en
+    algorithm: rank
+    include: [{ entity: "DominoInfo", fields: [{ name: "tag" }]}]
+  )
+
+type DominoInfo @entity {
+  id: ID!
+  minter: Bytes! # address
+  holder: Bytes! # address
+  tokenURI: String!
+  tag: String!
+  cover: String!
+  mintTime: BigInt!
+}

@@ -1,0 +1,29 @@
+specVersion: 0.0.2
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Domino
+    network: ropsten
+    source:
+      address: "0x9F9406A886F7DdDFDa013DDe741e9e4180Fb16e4"
+      abi: Domino
+      startBlock: 11005116
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - Approval
+        - ApprovalForAll
+        - Mint
+        - Transfer
+      abis:
+        - name: Domino
+          file: ./abis/Domino.json
+      eventHandlers:
+        - event: Mint(indexed address,indexed address,string,string,string,uint256)
+          handler: handleMint
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
