@@ -14,6 +14,7 @@ export function handleMint(event: Mint): void {
   domino.tag = event.params._tag;
   domino.cover = event.params._cover;
   domino.mintTime = event.block.timestamp;
+  domino.hash = event.transaction.hash;
   domino.save();
 }
 

@@ -13,5 +13,6 @@ type DominoInfo @entity {
   tokenURI: String!
   tag: String!
   cover: String!
+  hash: Bytes!
   mintTime: BigInt!
 }
