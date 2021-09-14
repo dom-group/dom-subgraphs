@@ -1,0 +1,15 @@
+node_modules
+typechain
+deployments
+abi
+test
+.env
+package-lock.json
+*/*/node_modules
+*/*/package-lock.json
+*/*/generated
+*/*/build
+
+#Hardhat files
+cache
+artifacts
